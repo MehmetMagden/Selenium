@@ -29,6 +29,12 @@ public class C04_WebElementMethodlari {
 
 
         driver.close();
+
+        /*
+            WebElementIsmi.getTagName()--> daha önce locate ettiğimiz bir webElement'in tagName'ını döndürür
+            WebElementIsmi.getAttribute(attributeIsmi)--> daha önce locate ettiğimiz bir webElementinin
+            istediğim attribute'nun değerini döndürür
+         */
     }
 
 }
