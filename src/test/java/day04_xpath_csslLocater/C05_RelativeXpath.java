@@ -13,7 +13,7 @@ public class C05_RelativeXpath {
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(); //creates a object to use
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));  //I am not so sure but in needs waits for max 15 secs
 
