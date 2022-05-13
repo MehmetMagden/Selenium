@@ -14,7 +14,7 @@ public class C05_RelativeXpath {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver(); //creates a object to use
-        driver.manage().window().maximize();
+        driver.manage().window().maximize();    //Maximize the window
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));  //I am not so sure but in needs waits for max 15 secs
 
         driver.get("https://www.diemol.com/selenium-4-demo/relative-locators-demo.html#");
