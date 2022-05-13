@@ -24,7 +24,7 @@ public class C05_RelativeXpath {
         WebElement mountie =driver.findElement(RelativeLocator.with(By.tagName("img")).below(boston).toLeftOf(sailor));
         System.out.println(mountie.getAttribute("id"));
 
-        driver.close();
+        driver.close(); //Closes theproject
 
     }
 }
