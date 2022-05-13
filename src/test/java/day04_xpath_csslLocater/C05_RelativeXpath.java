@@ -19,8 +19,8 @@ public class C05_RelativeXpath {
 
         driver.get("https://www.diemol.com/selenium-4-demo/relative-locators-demo.html#");
 
-        WebElement boston =driver.findElement(By.id("pid6_thumb"));
-        WebElement sailor =driver.findElement(By.id("pid11_thumb"));
+        WebElement boston =driver.findElement(By.id("pid6_thumb"));     //finds the element
+        WebElement sailor =driver.findElement(By.id("pid11_thumb"));        //finds the element
         WebElement mountie =driver.findElement(RelativeLocator.with(By.tagName("img")).below(boston).toLeftOf(sailor));
         System.out.println(mountie.getAttribute("id"));
 
